@@ -27,7 +27,7 @@ body{
 }
 .quiz h2{
     font-size: 18px;
-    color: aliceblue;
+    color: rgb(40, 154, 253);
     font-weight: 600;
 }
 .btn{
@@ -40,10 +40,28 @@ body{
     margin: 10px 0;
     text-align: left;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .btn:hover{
     background:#222;
     color: #fff;
 
+}
+#nextbtn{
+    background: #165877;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 2s;
+    display: block;
+    /* display: none; */
+}
+#nextbtn:hover{
+    background: #000000;
+    color: #fff;
 }
