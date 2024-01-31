@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body{
+    background: #567bf5
+}
+.main{
+    background: #ffffff;
+    width: 80%;
+    max-width: 750px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 45px;
+}
