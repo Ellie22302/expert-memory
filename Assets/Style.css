@@ -59,7 +59,7 @@ body{
     cursor: pointer;
     transition: all 2s;
     display: block;
-    /* display: none; */
+    display: none;
 }
 #nextbtn:hover{
     background: #000000;
