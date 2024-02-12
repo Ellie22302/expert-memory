@@ -7,6 +7,11 @@
 body{
     background: #567bf5
 }
+#time{
+    color: #000000;
+    font-size: 80px;
+    font-weight: 500;
+}
 .main{
     background: #ffffff;
     width: 80%;
@@ -65,3 +70,33 @@ body{
     background: #000000;
     color: #fff;
 }
+
+.correct{
+    background: #52e973;
+}
+
+.incorrect{
+    background: #eb2e2e;
+}
+#Scores{
+    display: block;
+    text-align: center;
+    background: #1461c5;
+    border-radius: 5;
+    margin: 10px 10px 10px;
+    color: #52e973;
+    
+}
+.forms{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    input{
+        margin-bottom: 5px;
+        width: 75px;
+        border: none;
+        box-shadow: 0 5px 0 #52e973;
+    }

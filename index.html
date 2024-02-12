@@ -8,6 +8,7 @@
         <body>
             <div class="main">
                 <h1>Java Quiz</h1>
+                <h1 id="time"style="text-align:Right;">0</h1>
                 <div class="quiz">
                     <h2 id="question">Question</h2>
                     <div id="awnser-button">
@@ -19,6 +20,22 @@
                     <div class="nextbutton">
                     <button id="next-btn">Next Question</button>
                     </div>
+                    <a id="Scores" href="/highscores.html" style="text-align: right;">High Scores</a>
+                </div>
+                <div id="forms">
+                    <form>
+                        <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="username"
+                        />
+                        <button type="submit" 
+                        class="btn"
+                         onclick="saveHighscore(event)" 
+                         disabled
+                         >Save</button>
+                    </form>
                 </div>
             </div>
             <script src="./Assets/script.js"></script>
