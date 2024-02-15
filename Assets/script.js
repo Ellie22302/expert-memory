@@ -163,7 +163,7 @@ saveHighscore = e =>{
     e.preventDefault();
     console.log("button")
     const score ={
-    score : Math.floor(Math.random()* 5),
+    score : mostRecentScore,
     name : username.value
     };
     highScores.push(score);
