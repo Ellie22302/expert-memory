@@ -128,6 +128,7 @@ function selectAnswer(e){
             questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
             nextButton.innerHTML = "Play Again";
             nextButton.style.display = "block";
+            localStorage.setItem('mostRecentScore', score);
         }
 
 function handleNextButton(){
@@ -151,16 +152,30 @@ nextButton.addEventListener("click", ()=>{
 })
 const username = document.getElementById('username'); 
 const saveScoreBtn = document.getElementById('saveScoreBtn');
-
-
-
-saveHighscore = e =>{
-    e.preventDefault();
-
-}
+const mostRecentScore = localStorage.getItem('mostRecentScore')
+const highScores = JSON.parse(localStorage.getItem("highscores")) || [];
+const max = 5;
 username.addEventListener('keyup',() =>{
     console.log(username.value);
     saveScoreBtn.disabled= !username.value;
 })
+saveHighscore = e =>{
+    e.preventDefault();
+    console.log("button")
+    const score ={
+    score : mostRecentScore,
+    name : username.value
+    };
+    highScores.push(score);
+
+    highScores.sort( ( a,b) =>b.score - a.score)
+    
+    highScores.splice(5)
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+
+    console.log(highScores);
+};
+
 
 startQuiz();
